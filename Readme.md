@@ -132,4 +132,4 @@ https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14ad
 
 ## 📎 부록
 
-- 📄 [PBL 결과보고서 PDF](docs/1202-파이썬프로그래밍2-PBL_결과보고서(이은우))
+- 📄 [PBL 결과보고서 PDF](https://github.com/DavidMao8849/Django_Website/blob/6aff1a171a2879973c24286d1685dbb4700bf7c0/docs/1202-%ED%8C%8C%EC%9D%B4%EC%8D%AC%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D2-PBL%20%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0%EC%84%9C(%EC%9D%B4%EC%9D%80%EC%9A%B0).pdf)
