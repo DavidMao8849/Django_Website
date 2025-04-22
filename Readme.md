@@ -67,9 +67,12 @@ mysite/
 
 ## 🖼 결과 예시
 
-![시작화면](https://github.com/user-attachments/assets/275f650c-f3e1-48a9-9272-49689506b687)
-![결과 화면 승리](https://github.com/user-attachments/assets/4384942d-93ac-4f94-b2fc-fb1cb78494fa)
-
+- pbl.html - 팀원 리스트 및 팀원 추가 폼
+https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/pbl.html#L1-L27
+- member.html - 팀원 상세 정보 및 친구 목록으로 이동 링크
+https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/member.html#L1-L9
+- friend.html - 친구 리스트 및 친구 추가 폼
+https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/member.html#L1-L9
 
 ---
 
