@@ -42,7 +42,7 @@
 ## 🧱 프로젝트 파일 구조
 
 ```bash
-mysite/
+Team_Member/
 ├── pbl/                # 애플리케이션
 │   ├── models.py       # Member, Friend 모델 정의
 │   ├── views.py        # home, member_detail, friend_list 뷰 정의
@@ -65,14 +65,22 @@ mysite/
 
 ---
 
-## 🖼 결과 예시
-
+## 🖼 결과 화면
+![image](https://github.com/user-attachments/assets/8a3192cc-67ca-4c60-81a9-3e6c44095c0d)
 - pbl.html - 팀원 리스트 및 팀원 추가 폼
 https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/pbl.html#L1-L27
+---
+![image](https://github.com/user-attachments/assets/3c4f5986-83b5-4fb9-bcf6-2b392f3245b8)
 - member.html - 팀원 상세 정보 및 친구 목록으로 이동 링크
 https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/member.html#L1-L9
+---
+![image](https://github.com/user-attachments/assets/e857a96a-af42-4ec0-8dc9-fb6ef03a0753)
 - friend.html - 친구 리스트 및 친구 추가 폼
 https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/member.html#L1-L9
+
+![image](https://github.com/user-attachments/assets/1269ae6d-d10d-4448-a2a4-f994cebf5e85)
+
+![image](https://github.com/user-attachments/assets/cacc9a50-9caa-4b6f-b7c1-8cd962d3f706)
 
 ---
 
