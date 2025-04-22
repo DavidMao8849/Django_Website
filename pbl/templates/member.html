@@ -1,0 +1,9 @@
+<title>{{ member.name }}의 페이지</title>
+<h1>{{ member.name }}의 정보</h1>
+<div>
+    <img src="{{ member.photo.url }}" alt="{{ member.name }}" style="width: 150px; height: 150px;">
+    <p>학번: {{ member.student_id }}</p>
+    <p>취미: {{ member.hobby }}</p>
+</div>
+<a href="{% url 'friend_list' member.id %}">친구 목록 보기</a><br>
+<a href="{% url 'home' %}">홈으로 돌아가기</a>

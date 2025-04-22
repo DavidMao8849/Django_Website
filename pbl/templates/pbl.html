@@ -1,0 +1,27 @@
+{% load static %}
+<title>팀원 소개</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<script src="{% static 'js/script.js' %}" defer></script>
+
+<div class="team-container">
+<h2>팀원 소개</h2>
+    {% for member in members %}
+    <div class="team-member">
+        <div class="member-info">
+            <h3>{{ member.name }}</h3>
+            ({{ member.hobby }})
+            <a href="{% url 'member_detail' member.id %}">더보기</a>
+        </div>
+        <img src="{{ member.photo.url }}" alt="{{ member.name }}" class="member-photo">
+    </div>
+    {% endfor %}
+    <hr>
+    <button onclick="toggleForm()">새 팀원 추가</button>
+    <div id="form-container" style="display: none;">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">추가하기</button>
+        </form>
+    </div>
+</div>

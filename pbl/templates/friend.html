@@ -1,0 +1,23 @@
+{% load static %}
+<title>{{ member.name }}의 친구 목록</title>
+<script src="{% static 'js/script.js' %}" defer></script>
+<h1>{{ member.name }}의 친구들</h1>
+<div>
+    {% for friend in friends %}
+    <div style="margin-bottom: 20px;">
+        <h3>{{ friend.name }}</h3>
+        <p>관계: {{ friend.relation }}</p>
+    </div>
+    {% endfor %}
+    <hr>
+    <button onclick="toggleForm()">새 친구 추가</button>
+        <div id="form-container" style="display: none;">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">추가하기</button>
+            </form>
+        </div>
+</div>
+<a href="{% url 'member_detail' member.id %}">뒤로 가기</a><br>
+<a href="{% url 'home' %}">홈으로 돌아가기</a>
