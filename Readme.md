@@ -29,12 +29,12 @@
 - Django
 - HTML/CSS, JavaScript
 - SQLite (Django ORM 기반)
-- Django 핵심 개념
-  └── MVT 패턴
-  └── ORM 활용
-  └── Form 처리 및 validation
-  └── Static 파일 관리
-  └── URL dispatcher
+- Django 핵심 개념<br/>
+  └── MVT 패턴<br/>
+  └── ORM 활용<br/>
+  └── Form 처리 및 validation<br/>
+  └── Static 파일 관리<br/>
+  └── URL dispatcher<br/>
   └── 관리자(admin) 기능
 
 ---
@@ -62,44 +62,64 @@ mysite/            # 프로젝트 뼈대
 
 ## 💻 주요 코드
 
-- models.py - 팀원의 정보를 저장할 Member, Friend 클래스 정의
+- #### models.py - 팀원의 정보를 저장할 Member, Friend 클래스 정의
 https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14adaca1b4c8c474/pbl/models.py#L1-L18
 <br/>
-- admin.py - admin(관리자) 사이트에 클래스 등록
+> ## 🗃 DB 클래스
+> - #### Member 클래스 <br/>
+> ![image](https://github.com/user-attachments/assets/4d4d66ab-c70f-4b41-a3ad-de49d8d40022)
+> - #### Friend 클래스 <br/>
+> ![image](https://github.com/user-attachments/assets/527af2b2-a370-4ae2-b148-063eb4286d0a)
+
+- #### admin.py - admin(관리자) 사이트에 클래스 등록
 https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14adaca1b4c8c474/pbl/admin.py#L1-L12
 <br/>
-- views.py - 메인화면(pbl.html), 팀원정보(member.html), 친구목록(friend.html) 템플릿의 동작을 위해 view를 정의한다.
+> ## 📄 admin(관리자) 사이트
+> ![image](https://github.com/user-attachments/assets/289c747c-d009-4812-83cd-9c93e2adcf33)
+> ![image](https://github.com/user-attachments/assets/eb2a181d-7751-454b-8b4a-5d3c11703c06)
+
+- #### views.py - 메인화면(pbl.html), 팀원정보(member.html), 친구목록(friend.html) 템플릿의 동작을 위한 view를 정의
 https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14adaca1b4c8c474/pbl/views.py#L1-L48
 <br/>
-- urls.py - 클라이언트로부터 요청 받은 URL을 URL패턴과 매칭되는지 분석함
+
+- #### urls.py - 클라이언트로부터 요청 받은 URL을 URL패턴과 매칭되는지 분석함
 https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14adaca1b4c8c474/pbl/urls.py#L1-L8
 <br/>
-- forms.py - form 기능 구현
+
+- #### forms.py - form 기능 구현
 https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14adaca1b4c8c474/pbl/forms.py#L1-L22
 
 ---
 
-## 🖼 결과 화면
-![image](https://github.com/user-attachments/assets/8a3192cc-67ca-4c60-81a9-3e6c44095c0d)
-- ### pbl.html - 팀원 리스트 및 팀원 추가 폼
-https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/pbl.html#L1-L27
+## 🖼 결과 시연 화면
 
----
-<br/>
-![image](https://github.com/user-attachments/assets/3c4f5986-83b5-4fb9-bcf6-2b392f3245b8)
-- ### member.html - 팀원 상세 정보 및 친구 목록으로 이동 링크
-https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/member.html#L1-L9
+<details>
+<summary>결과물 보기</summary>
 
----
-<br/>
-![image](https://github.com/user-attachments/assets/e857a96a-af42-4ec0-8dc9-fb6ef03a0753)
-- ### friend.html - 친구 리스트 및 친구 추가 폼
-https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/member.html#L1-L9
+  ![image](https://github.com/user-attachments/assets/8a3192cc-67ca-4c60-81a9-3e6c44095c0d)
+  - ### pbl.html - 팀원 리스트 및 팀원 추가 폼
+  https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/pbl.html#L1-L27
 
----
+  ---
+  <br/>
+  
+  ![image](https://github.com/user-attachments/assets/3c4f5986-83b5-4fb9-bcf6-2b392f3245b8)
+  - ### member.html - 팀원 상세 정보 및 친구 목록으로 이동 링크
+  https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/member.html#L1-L9
 
-- ### form 기능 구현[친구 추가 및 새 팀원 추가] <br/>
-![image](https://github.com/user-attachments/assets/1269ae6d-d10d-4448-a2a4-f994cebf5e85) ![image](https://github.com/user-attachments/assets/3806277d-e918-48bb-8854-9f8496c30bcc)
+  ---
+  <br/>
+  
+  ![image](https://github.com/user-attachments/assets/e857a96a-af42-4ec0-8dc9-fb6ef03a0753)
+  - ### friend.html - 친구 리스트 및 친구 추가 폼
+  https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/member.html#L1-L9
+
+  ---
+
+  - ### form 기능 구현[친구 추가 및 새 팀원 추가] <br/>
+  ![image](https://github.com/user-attachments/assets/1269ae6d-d10d-4448-a2a4-f994cebf5e85) ![image](https://github.com/user-attachments/assets/3806277d-e918-48bb-8854-9f8496c30bcc)
+
+</details>
 
 ---
 
