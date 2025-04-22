@@ -42,9 +42,10 @@
 ## 🧱 프로젝트 파일 구조
 
 ```bash
-Team_Member/
+mysite/            # 프로젝트 뼈대
 ├── pbl/                # 애플리케이션
-│   ├── models.py       # Member, Friend 모델 정의
+│   ├── models.py       # Member, Friend 클래스 정의
+│   ├── admin.py        # DB 테이블 관리자 사이트 설정
 │   ├── views.py        # home, member_detail, friend_list 뷰 정의
 │   ├── urls.py         # URL 패턴 정의
 │   ├── forms.py        # form 기능 구현
@@ -59,28 +60,46 @@ Team_Member/
 ---
 
 
-## 💻 주요 코드 예시
+## 💻 주요 코드
 
-
+- models.py - 팀원의 정보를 저장할 Member, Friend 클래스 정의
+https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14adaca1b4c8c474/pbl/models.py#L1-L18
+<br/>
+- admin.py - admin(관리자) 사이트에 클래스 등록
+https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14adaca1b4c8c474/pbl/admin.py#L1-L12
+<br/>
+- views.py - 메인화면(pbl.html), 팀원정보(member.html), 친구목록(friend.html) 템플릿의 동작을 위해 view를 정의한다.
+https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14adaca1b4c8c474/pbl/views.py#L1-L48
+<br/>
+- urls.py - 클라이언트로부터 요청 받은 URL을 URL패턴과 매칭되는지 분석함
+https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14adaca1b4c8c474/pbl/urls.py#L1-L8
+<br/>
+- forms.py - form 기능 구현
+https://github.com/DavidMao8849/Django_Website/blob/2ca51f1093b9ebab2852240d14adaca1b4c8c474/pbl/forms.py#L1-L22
 
 ---
 
 ## 🖼 결과 화면
 ![image](https://github.com/user-attachments/assets/8a3192cc-67ca-4c60-81a9-3e6c44095c0d)
-- pbl.html - 팀원 리스트 및 팀원 추가 폼
+- ### pbl.html - 팀원 리스트 및 팀원 추가 폼
 https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/pbl.html#L1-L27
+
 ---
+<br/>
 ![image](https://github.com/user-attachments/assets/3c4f5986-83b5-4fb9-bcf6-2b392f3245b8)
-- member.html - 팀원 상세 정보 및 친구 목록으로 이동 링크
+- ### member.html - 팀원 상세 정보 및 친구 목록으로 이동 링크
 https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/member.html#L1-L9
+
 ---
+<br/>
 ![image](https://github.com/user-attachments/assets/e857a96a-af42-4ec0-8dc9-fb6ef03a0753)
-- friend.html - 친구 리스트 및 친구 추가 폼
+- ### friend.html - 친구 리스트 및 친구 추가 폼
 https://github.com/DavidMao8849/Django_Website/blob/4eb599c18984b3645bbfddd3f362bc53b2da22a8/pbl/templates/member.html#L1-L9
 
-![image](https://github.com/user-attachments/assets/1269ae6d-d10d-4448-a2a4-f994cebf5e85)
+---
 
-![image](https://github.com/user-attachments/assets/cacc9a50-9caa-4b6f-b7c1-8cd962d3f706)
+- ### form 기능 구현[친구 추가 및 새 팀원 추가] <br/>
+![image](https://github.com/user-attachments/assets/1269ae6d-d10d-4448-a2a4-f994cebf5e85) ![image](https://github.com/user-attachments/assets/3806277d-e918-48bb-8854-9f8496c30bcc)
 
 ---
 
