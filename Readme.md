@@ -2,7 +2,7 @@
 # 📖 Django 기반 팀원 소개 웹 애플리케이션
 
 **파이썬 프로그래밍 PBL 프로젝트 - 개인**  
-> 프로젝트 기간: 2024년 5월 23일 ~ 2024년 6월 18일
+> 프로젝트 기간: 2024년 11월 23일 ~ 2024년 12월 1일
 
 ---
 
@@ -13,10 +13,29 @@
 
 ---
 
+## ⚙ 주요 기능
+- **Main → List → Detail** 구조의 웹 페이지 구현
+- **팀원 정보 등록/조회 기능 (form 기반)**
+- **팀원의 친구 목록 등록/조회 기능**
+- Django의 **admin 기능을 통한 DB 관리**
+- **ORM 기반 모델링** (Member & Friend 모델)
+- **템플릿 시스템**, **URLconf**, **View 함수**를 통한 화면 구성
+
+---
+
 ## 🛠️ 사용 기술
 
 - Python 3
-- tkinter
+- Django
+- HTML/CSS, JavaScript
+- SQLite (Django ORM 기반)
+- Django 핵심 개념
+  └── MVT 패턴
+  └── ORM 활용
+  └── Form 처리 및 validation
+  └── Static 파일 관리
+  └── URL dispatcher
+  └── 관리자(admin) 기능
 
 ---
 
@@ -39,19 +58,10 @@ mysite/
 
 ---
 
-## 🧠 주요 기능
-- **Main → List → Detail** 구조의 웹 페이지 구현
-- **팀원 정보 등록/조회 기능 (form 기반)**
-- **팀원의 친구 목록 등록/조회 기능**
-- Django의 **admin 기능을 통한 DB 관리**
-- **ORM 기반 모델링** (Member & Friend 모델)
-- **템플릿 시스템**, **URLconf**, **View 함수**를 통한 화면 구성
-
----
 
 ## 💻 주요 코드 예시
 
-https://github.com/DavidMao8849/Broken_Wall_Game/blob/ca27e4766017649b6c3a8a7911da780f21757c52/breakout%5Btest3%5D.py#L122-L240
+
 
 ---
 
@@ -65,8 +75,8 @@ https://github.com/DavidMao8849/Broken_Wall_Game/blob/ca27e4766017649b6c3a8a7911
 
 ## 💡 활용 방안
 
-- **파이썬 언어를 이용하여 앱을 만들고 UI 화면을 작성할 수 있는 코딩능력 향상**
-- **풍부한 라이브러리를 이용해서 복잡한 기능들을 빠르고 쉽게 구현가능하여 인공지능의 구현 결과물을 쉽게 만들 수 있음**
+- **Django 웹 개발의 핵심 개념인 MVT 아키텍처, DB 모델링, 폼 처리, 템플릿 시스템 등을 실습하고 습득**
+- **이를 기반으로 향후 AI 기능이 연동된 웹 서비스로 확장할 수 있는 가능성**
 
 ---
 
